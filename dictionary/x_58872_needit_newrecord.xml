@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="NewRecord" max_length="40" name="x_58872_needit_newrecord" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="13" label="state" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="reqested" language="ja" sequence="0" value="13"/>
+                <element inactive_on_update="false" label="Awaiting Approval" language="ja" sequence="1" value="14"/>
+                <element inactive_on_update="false" label="Approval" language="ja" sequence="2" value="15"/>
+                <element inactive_on_update="false" label="Awaiting Feedback" language="ja" sequence="3" value="16"/>
+                <element inactive_on_update="false" label="Closed Complete" language="ja" sequence="4" value="3"/>
+                <element inactive_on_update="false" label="Withdrawn" language="ja" sequence="5" value="8"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Requestedfor" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Legal" label="RequestType" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" language="ja" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" language="ja" sequence="1" value="Facilities"/>
+                <element inactive_on_update="false" label="Legal" language="ja" sequence="2" value="Legal"/>
+                <element inactive_on_update="false" label="Your Department Choice" language="ja" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal 1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources 1" language="ja" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resources 2" language="ja" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Facilities 1" language="ja" sequence="2" value="facilities 1"/>
+                <element inactive_on_update="false" label="Facilities 2" language="ja" sequence="3" value="facilities 2"/>
+                <element inactive_on_update="false" label="Legal 1" language="ja" sequence="4" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" language="ja" sequence="5" value="legal 2"/>
+                <element inactive_on_update="false" label="Your Department Choice 1" language="ja" sequence="6" value="your_choice1"/>
+                <element inactive_on_update="false" label="Your Department Choice 2" language="ja" sequence="7" value="your_choice2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="calendar_date_time"/>
+        <element label="番号" max_length="100" name="番号" type="string"/>
+        <index name="index">
+            <element name="u_requested_for"/>
+        </index>
+    </element>
+</database>

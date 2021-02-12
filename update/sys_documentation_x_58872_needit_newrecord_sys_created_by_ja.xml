@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="sys_created_by" label="Crated By" language="ja" table="x_58872_needit_newrecord">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <help/>
+            <hint/>
+            <label>Crated By</label>
+            <language>ja</language>
+            <name>x_58872_needit_newrecord</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-10 04:48:10</sys_created_on>
+            <sys_id>ff3913601bd220103d49ff37dc4bcbcf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Crated By</sys_name>
+            <sys_package/>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_documentation_x_58872_needit_newrecord_sys_created_by_ja</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-10 05:24:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
